@@ -9,8 +9,8 @@ const createMarvelClient = () => {
     // Adiciona interceptador para incluir parâmetros de autenticação
     instance.interceptors.request.use((config) => {
         const timestamp = new Date().getTime().toString();
-        const privateKey = process.env.MARVEL_PRIVATE_KEY || '';
-        const publicKey = process.env.MARVEL_API_KEY || '';
+        const privateKey = process.env.MARVEL_PRIVATE_KEY || 'cecc4296a055278d713b1856d264c358645907de';
+        const publicKey = process.env.MARVEL_API_KEY || '5df8e281a00cf7c7c907684137a071c1';
         
         // Gera o hash MD5: md5(ts+privateKey+publicKey)
         const hash = crypto
