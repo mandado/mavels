@@ -90,7 +90,7 @@ pnpm dev
 - [x] Exclusão de personagens da lista;
 - [x] Responsividade;
 - [x] Carregamento Infinito;
-- [ ] Testes Unitários;
+- [x] Testes Unitários;
 
 
 # Pontos de melhorias
